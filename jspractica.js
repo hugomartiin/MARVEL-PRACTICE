@@ -8,7 +8,7 @@
  * Escribir vuestro código en la función procesarJSON
  */
 
-fetch("./data/heroes.json")
+fetch("./data/heros.json")
   .then((response) => {
     return response.json();
   })
@@ -19,19 +19,27 @@ fetch("./data/heroes.json")
   .catch((e) => {
     console.log(e);
   });
+  
+  const cardRow = document.querySelector(".row");
 
-function renderCards(jsondata) {
-  for (const char of jsondata.data.result) {
+  function renderCards(jsondata) {
+    const template = document.querySelector("template").content;
+    for (const hero of jsondata.data.results) {
+      let card = template.cloneNode(true);
+      
+      const imagen = card.querySelector(".card-img-top");
+      imagen.src= `${hero.thumbnail.path}.${hero.thumbnail.extension}`;
+      const name = card.querySelector(".card-title");
+      name.textContent = hero.name;
+      cardRow.append(card);
+    }
+  
+  
     
-  }
+  
+  
+  
 
-
-
-
-
-
-
-
-
-}
+  
+  } 
 

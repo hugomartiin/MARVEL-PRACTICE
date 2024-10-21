@@ -18,21 +18,25 @@
                <div class="container">
                     <a class="navbar-brand"><img src="img/marvellogo.png" alt="" class="w-50"></a>
                     <form class="d-flex" role="search">
-                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                         <button class="btn btn-light" type="submit">Buscar</button>
+                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Buscar">
+                         <button class="btn btn-light" type="submit">Search</button>
                     </form>
                </div>
           </nav>
 
      </header>
-     <main>
+     <main class="pt-5" style="background-color: #d6cdcd;">
 
 
           <!-- Aqui debeis crear vuestras cards etc, para meter los datos del json-->
 
           <!-- Here you have to create your cards , and some other elements, to insert the data from the json-->
 
+          <div class="container">
+               <div class="row justify-content-between ">
 
+               </div>
+          </div>
 
           <!-- como ejemplo, os dejamos un acordeon ya creado, pero la estructura para mostrarlo es la que vosotros queráis
            tened cuidado con los controles del acordeon-->
@@ -41,58 +45,79 @@
            be careful with the controlls of the accordeon-->
 
 
-          <div class="accordion" id="accordionExample">
-               <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapseOne">
-                              Accordion Item #1
-                         </button>
-                    </h2>
-                    <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="headingOne">
-                         <div class="accordion-body">
-                              This is the first item's accordion body.
-                         </div>
-                    </div>
-               </div>
-               <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapseOne">
-                              Accordion Item #1
-                         </button>
-                    </h2>
-                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="headingOne">
-                         <div class="accordion-body">
-                              This is the first item's accordion body.
-                         </div>
-                    </div>
-               </div>
-               <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapseOne">
-                              Accordion Item #1
-                         </button>
-                    </h2>
-                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingOne">
-                         <div class="accordion-body">
-                              This is the first item's accordion body.
-                         </div>
-                    </div>
-               </div>
-          </div>
-
-
-
-
-
-
-
      </main>
      <footer>
           <!-- place footer here -->
      </footer>
+     <template>
+          <div class="col-xl-4 col-md-6 ">
+               <div class="card mb-4">
+                    <img class="card-img-top" src="img/example.jpg" alt="Title" />
+                    <div class="card-body">
+                         <h4 class="card-title text-center">A-Bomb (HAS)</h4>
+                         <div class="accordion" id="accordionExample">
+                              <div class="accordion-item ">
+                                   <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" style="background-color: white;" type="button"
+                                             data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true"
+                                             aria-controls="collapseOne">
+                                             Description
+                                        </button>
+                                   </h2>
+                                   <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                        <div class="accordion-body">
+                                             Rick Jones has been Hulk's best bud since day one, but now he's
+                                             more than a friend...he's a teammate! Transformed by a Gamma
+                                             energy explosion, A-Bomb's thick, armored skin is just as strong
+                                             and powerful as it is blue. And when he curls into action, he
+                                             uses it like a giant bowling ball of destruction!
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="accordion-item">
+                                   <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" style="background-color: white;" type="button"
+                                             data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true"
+                                             aria-controls="collapseOne">
+                                             Comics
+                                        </button>
+                                   </h2>
+                                   <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                        <div class="accordion-body">
+                                             Available: 4
+                                             <ul>
+                                                  <li>FREE COMIC BOOK DAY 2013 1 (2013) #1</li>
+                                                  <li>FREE COMIC BOOK DAY 2013 1 (2013) #1</li>
+                                                  <li>FREE COMIC BOOK DAY 2013 1 (2013) #1</li>
+                                                  <li>FREE COMIC BOOK DAY 2013 1 (2013) #1</li>
+                                             </ul>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="accordion-item">
+                                   <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" style="background-color: white;" type="button"
+                                             data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true"
+                                             aria-controls="collapseOne">
+                                             Series
+                                        </button>
+                                   </h2>
+                                   <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                        <div class="accordion-body">
+                                             Available: 2
+                                             <ul>
+                                                  <li>Hulk (2008 - 2012)</li>
+                                                  <li>Hulk (2008 - 2012)</li>
+                                                  <li>Hulk (2008 - 2012)</li>
+                                             </ul>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </template>
      <!-- Bootstrap JavaScript Libraries -->
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
           integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -101,7 +126,7 @@
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
           integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
           crossorigin="anonymous"></script>
-     <script src="=./jspractica.js"></script>
+     <script src="./jspractica.js"></script>
 </body>
 
 </html>
