@@ -38,13 +38,12 @@ function renderCards(jsondata) {
 
     const collapseDescription = card.querySelector("#collapse_description_");
     const headingDescription = card.querySelector("#heading_description_");
-    if (collapseDescription && headingDescription) {
-      collapseDescription.id = `collapse_description_${accordionId}`;
-      headingDescription.id = `heading_description_${accordionId}`;
+    collapseDescription.id = `collapse_description_${accordionId}`;
+    headingDescription.id = `heading_description_${accordionId}`;
 
-      const descriptionButton = card.querySelector("[data-bs-target='#collapse_']");
-      descriptionButton.setAttribute('data-bs-target', `#collapse_description_${accordionId}`);
-      descriptionButton.setAttribute('aria-controls', `collapse_description_${accordionId}`);
+    const descriptionButton = card.querySelector("[data-bs-target='#collapse_']");
+    descriptionButton.setAttribute('data-bs-target', `#collapse_description_${accordionId}`);
+    descriptionButton.setAttribute('aria-controls', `collapse_description_${accordionId}`);
 
 
     // comics
@@ -55,7 +54,7 @@ function renderCards(jsondata) {
       listItem.textContent = comic.name;
       comicsList.appendChild(listItem);
     }
-  }
+  
     const comicsAvailable  = card.querySelector(".available-comics");
     comicsAvailable.innerHTML=`Available: ${hero.comics.available}`;
 
